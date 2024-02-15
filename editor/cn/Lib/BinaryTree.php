@@ -314,6 +314,7 @@ class BinaryTree
 //$arrTree = [3, 5, 1, 6, 2, 0, 8, null, null, 7, 4];
 //$arrTree = range(1, 63, 1);
 //$arrTree = [1, 2, 3, 4, null, null, 7, 8, 9, null, 15];
+//$arrTree = [5,4,8,11,null,13,4,7,2,null,null,5,1];
 //$a = new BinaryTree($arrTree);
 ////print_r($a->treeHeight($a) . '|');
 //$a->printTree($a);
