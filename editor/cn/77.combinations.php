@@ -65,6 +65,7 @@ class Solution {
 
             $path[] = $i;
             $this->dfs3($n,$k - 1,$i + 1,$path,$result);
+            printf("i:%d,path:%s\n", $i, implode(" ", $path));
             array_pop($path);
         }
     }
