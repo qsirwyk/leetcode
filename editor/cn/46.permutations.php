@@ -38,7 +38,7 @@ class Solution {
             return;
         }
 
-        for($i = $start;  $i < $end; $i++) {
+        for($i = $start, $iMax = count($nums); $i < $iMax; $i++) {
             [$nums[$i], $nums[$start]] = [$nums[$start], $nums[$i]];
             $this->dfs2($nums,$start + 1,$end);
             [$nums[$i], $nums[$start]] = [$nums[$start], $nums[$i]];
