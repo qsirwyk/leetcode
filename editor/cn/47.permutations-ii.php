@@ -11,7 +11,7 @@ class Solution {
      */
     function permuteUnique($nums) {
         $result = [];
-        sort($nums);
+        //sort($nums);
         //$used = array_fill(0,count($nums),0);
         //$this->dfs($nums,$used,[],$result);
         //return $result;

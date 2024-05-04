@@ -21,7 +21,7 @@ class Solution {
      * @return String[]
      */
     function binaryTreePaths($root) {
-        $this->dfs($root,'');
+        $this->dfs2($root,'');
         return $this->result;
     }
 
@@ -36,6 +36,16 @@ class Solution {
         }
         $path .= '->';
         $this->dfs($root->left, $path);
+        $this->dfs($root->right, $path);
+    }
+
+    function dfs2($root, $path) {
+        if (!$root->left && !$root->right) {
+            $this->result[] = $path . $root->val;
+            return;
+        }
+        $path .= $root->val . '->';
+        $this->dfs($root->left, $path );
         $this->dfs($root->right, $path);
     }
 
